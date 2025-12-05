@@ -1,4 +1,6 @@
 @extends('layout.app')
+@section('title','Blogs')
+@section('discribe','Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.')
 @section('content')
 
 		<!-- Start Hero Section -->
