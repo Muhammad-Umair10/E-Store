@@ -30,6 +30,14 @@ Route::get('/contact', function(){
     return view('contact');
 })->name('contact');
 
+Route::get('/cart',function(){
+    return view('cart');
+})->name('cart');
+
+Route::get('/checkout',function(){
+    return view('checkout');
+})->name('checkout');
+
 Route::get('/register', function(){
     return view('register');
 })->name('register');

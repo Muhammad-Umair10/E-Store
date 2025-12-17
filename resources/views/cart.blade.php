@@ -1,25 +1,7 @@
 @extends('layout.app')
+@section('title','Cart')
+@section('discribe','Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.')
 @section('content')
-
-	<!-- Start Hero Section -->
-			<div class="hero">
-				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-lg-5">
-							<div class="intro-excerpt">
-								<h1>Cart</h1>
-							</div>
-						</div>
-						<div class="col-lg-7">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- End Hero Section -->
-
-		
-
 		<div class="untree_co-section before-footer-section">
             <div class="container">
               <div class="row mb-5">
@@ -109,7 +91,7 @@
                       <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
                     </div>
                     <div class="col-md-4">
-                      <button class="btn btn-black">Apply Coupon</button>
+                      <button class="btn btn-black btn-sm">Apply Coupon</button>
                     </div>
                   </div>
                 </div>
@@ -140,7 +122,7 @@
         
                       <div class="row">
                         <div class="col-md-12">
-                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
+                          <button class="btn btn-black btn-sm btn-block" onclick="window.location=' {{ route('checkout') }}'">Proceed To Checkout</button>
                         </div>
                       </div>
                     </div>
