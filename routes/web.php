@@ -45,3 +45,8 @@ Route::get('/register', function(){
 Route::get('/login',function(){
     return view('login');
 })->name('login');
+
+// Dashboard links 
+Route::get('/Dashboard',function(){
+    return view('Dashboard.home');
+})->name('home');
