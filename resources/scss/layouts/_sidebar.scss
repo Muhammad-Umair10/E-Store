@@ -12,7 +12,7 @@
   position: fixed;
   left: 0;
   right: 0;
-  height: 100%;
+  height: 100vh;
 
   .sidebartoggler {
     color: var(--bs-dark-text-emphasis);
@@ -21,7 +21,7 @@
   .scroll-sidebar {
     overflow-y: auto;
     padding: $sidebar-spacing-x;
-    height: calc(100vh - 310px);
+    height: 100vh;
     border-radius: $border-radius;
 
     .simplebar-track.simplebar-horizontal {
@@ -151,7 +151,7 @@
         .sidebar-item {
           .sidebar-link.active {
             background-color: transparent !important;
-            color: var(--bs-primary) !important;
+            color: black !important;
           }
         }
       }
@@ -197,7 +197,10 @@
 }
 
 .collapse.in {
-  display: block;
+  display: block !important;
+  height: auto !important;
+  visibility: visible !important;
+  overflow: visible !important;
 }
 
 

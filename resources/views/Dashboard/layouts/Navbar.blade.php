@@ -5,18 +5,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flexy Free Bootstrap Admin Template by WrapPixel</title>
-  <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/logos/favicon.png') }}" />
-  @vite('resources/css/app.css')
+  <link rel="shortcut icon" type="image/png" href="{{ asset('images/logos/favicon.png') }}" />
+  @vite([
+        'resources/css/app.css',
+        'resources/css/tabler-icons.css',
+        'resources/css/style.css',
+        'resources/css/tiny-slider.css',
+        'resources/scss/styles.scss'
+  ])
+  @vite(['resources/libs/jquery/dist/jquery.min.js',
+       'resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js',
+       'resources/js/sidebarmenu.js',
+       'resources/js/app.min.js',
+       'resources/libs/simplebar/dist/simplebar.js',
+       'resources/js/dashboard.js'
+  ])
 </head>
 
 <body>
 <div>
  <aside class="left-sidebar">
       <!-- Sidebar scroll-->
-      <div>
+      <div class="sidebar">
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
-            <img src="assets/images/logos/logo.svg" alt="" />
+            <img src="{{ asset('images/logos/logo.svg') }}" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-6"></i>
@@ -30,7 +43,7 @@
               <span class="hide-menu">Home</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+              <a class="sidebar-link" href="{{route('Dashboard')}}" aria-expanded="false">
                 <i class="ti ti-atom"></i>
                 <span class="hide-menu">Dashboard</span>
               </a>
@@ -55,9 +68,9 @@
                 href="#" aria-expanded="false">
                 <div class="d-flex align-items-center gap-3">
                   <span class="d-flex">
-                    <i class="ti ti-shopping-cart"></i>
+                    <i class="ti ti-receipt"></i>
                   </span>
-                  <span class="hide-menu">eCommerce</span>
+                  <span class="hide-menu">Orders</span>
                 </div>
                 
               </a>
@@ -163,17 +176,13 @@
             <li>
               <span class="sidebar-divider lg"></span>
             </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Apps</span>
-            </li>
             <li class="sidebar-item">
               <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
                 <div class="d-flex align-items-center gap-3">
                   <span class="d-flex">
                     <i class="ti ti-basket"></i>
                   </span>
-                  <span class="hide-menu">Ecommerce</span>
+                  <span class="hide-menu">Products</span>
                 </div>
                 
               </a>
@@ -204,7 +213,7 @@
                 </li>
                 <li class="sidebar-item">
                   <a class="sidebar-link justify-content-between"  
-                    href="#">
+                    href="{{ route('list.product')}}">
                     <div class="d-flex align-items-center gap-3">
                       <div class="round-16 d-flex align-items-center justify-content-center">
                         <i class="ti ti-circle"></i>
@@ -228,7 +237,7 @@
                 </li>
                 <li class="sidebar-item">
                   <a class="sidebar-link justify-content-between"  
-                    href="#">
+                    href="{{route('add.product')}}">
                     <div class="d-flex align-items-center gap-3">
                       <div class="round-16 d-flex align-items-center justify-content-center">
                         <i class="ti ti-circle"></i>
@@ -295,9 +304,9 @@
                 aria-expanded="false">
                 <div class="d-flex align-items-center gap-3">
                   <span class="d-flex">
-                    <i class="ti ti-user-circle"></i>
+                    <i class="ti ti-users"></i>
                   </span>
-                  <span class="hide-menu">User Profile</span>
+                  <span class="hide-menu">Customers</span>
                 </div>
                 
               </a>
@@ -367,9 +376,9 @@
                 href="#" aria-expanded="false">
                 <div class="d-flex align-items-center gap-3">
                   <span class="d-flex">
-                    <i class="ti ti-phone"></i>
+                    <i class="ti ti-message-report"></i>
                   </span>
-                  <span class="hide-menu">Contact Table</span>
+                  <span class="hide-menu">Complains</span>
                 </div>
                 
               </a>
@@ -1789,6 +1798,7 @@
   ])
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 </body>
 
 </html>

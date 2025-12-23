@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -49,4 +50,15 @@ Route::get('/login',function(){
 // Dashboard links 
 Route::get('/Dashboard',function(){
     return view('Dashboard.home');
-})->name('home');
+})->name('Dashboard');
+
+Route::get('/add-product',function(){
+    return view('Dashboard.Product.ProductAdd');
+})->name('add.product');
+
+Route::get('/listProduct', function(){
+    return view('Dashboard.listProduct');
+})->name('list.product');
+
+Route::post('upload-image', [ProductController::class, 'uploadImage'])->name('image.upload');
+

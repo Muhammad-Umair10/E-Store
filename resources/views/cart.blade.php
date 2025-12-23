@@ -122,7 +122,7 @@
         
                       <div class="row">
                         <div class="col-md-12">
-                          <button class="btn btn-black btn-sm btn-block" onclick="window.location=' {{ route('checkout') }}'">Proceed To Checkout</button>
+                          <a href="{{ route('checkout')}}" class="btn btn-black btn-sm btn-block">Proceed To Checkout</button>
                         </div>
                       </div>
                     </div>
