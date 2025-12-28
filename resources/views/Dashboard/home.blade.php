@@ -32,11 +32,11 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-               
+
               <li class="nav-item dropdown">
-                <a class="nav-link " href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img src="{{ asset('images/profile/user-1.jpg') }}" alt="" width="35" height="35" class="rounded-circle">
+                <a class="nav-link " href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="{{ asset('images/profile/user-1.jpg') }}" alt="" width="35" height="35"
+                    class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -333,11 +333,11 @@
                       <div class="comment-footer mt-2">
                         <div class="d-flex align-items-center">
                           <span class="
-                              badge
-                              bg-info-subtle
-                              text-info
-                              
-                            ">Pending</span>
+                                  badge
+                                  bg-info-subtle
+                                  text-info
+
+                                ">Pending</span>
                           <span class="action-icons">
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-edit fs-5"></i></a>
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-check fs-5"></i></a>
@@ -345,14 +345,14 @@
                           </span>
                         </div>
                         <span class="
-                            text-muted
-                            ms-auto
-                            fw-normal
-                            fs-2
-                            d-block
-                            mt-2
-                            text-end
-                          ">April 14, 2025</span>
+                                text-muted
+                                ms-auto
+                                fw-normal
+                                fs-2
+                                d-block
+                                mt-2
+                                text-end
+                              ">April 14, 2025</span>
                       </div>
                     </div>
                   </div>
@@ -371,11 +371,11 @@
                       <div class="comment-footer mt-2">
                         <div class="d-flex align-items-center">
                           <span class="
-                              badge
-                              bg-success-subtle
-                              text-success
-                              
-                            ">Approved</span>
+                                  badge
+                                  bg-success-subtle
+                                  text-success
+
+                                ">Approved</span>
                           <span class="action-icons active">
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-edit fs-5"></i></a>
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-circle-x fs-5"></i></a>
@@ -383,14 +383,14 @@
                           </span>
                         </div>
                         <span class="
-                            text-muted
-                            ms-auto
-                            fw-normal
-                            fs-2
-                            text-end
-                            mt-2
-                            d-block
-                          ">April 14, 2025</span>
+                                text-muted
+                                ms-auto
+                                fw-normal
+                                fs-2
+                                text-end
+                                mt-2
+                                d-block
+                              ">April 14, 2025</span>
                       </div>
                     </div>
                   </div>
@@ -409,11 +409,11 @@
                       <div class="comment-footer mt-2">
                         <div class="d-flex align-items-center">
                           <span class="
-                              badge
-                              bg-danger-subtle
-                              text-danger
-                              
-                            ">Rejected</span>
+                                  badge
+                                  bg-danger-subtle
+                                  text-danger
+
+                                ">Rejected</span>
                           <span class="action-icons">
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-edit fs-5"></i></a>
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-check fs-5"></i></a>
@@ -421,14 +421,14 @@
                           </span>
                         </div>
                         <span class="
-                            text-muted
-                            ms-auto
-                            fw-normal
-                            fs-2
-                            d-block
-                            mt-2
-                            text-end
-                          ">April 14, 2025</span>
+                                text-muted
+                                ms-auto
+                                fw-normal
+                                fs-2
+                                d-block
+                                mt-2
+                                text-end
+                              ">April 14, 2025</span>
                       </div>
                     </div>
                   </div>
@@ -447,11 +447,11 @@
                       <div class="comment-footer mt-2">
                         <div class="d-flex align-items-center">
                           <span class="
-                              badge
-                              bg-info-subtle
-                              text-info
-                              
-                            ">Pending</span>
+                                  badge
+                                  bg-info-subtle
+                                  text-info
+
+                                ">Pending</span>
                           <span class="action-icons">
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-edit fs-5"></i></a>
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-check fs-5"></i></a>
@@ -459,14 +459,14 @@
                           </span>
                         </div>
                         <span class="
-                            text-muted
-                            ms-auto
-                            fw-normal
-                            fs-2
-                            d-block
-                            text-end
-                            mt-2
-                          ">April 14, 2025</span>
+                                text-muted
+                                ms-auto
+                                fw-normal
+                                fs-2
+                                d-block
+                                text-end
+                                mt-2
+                              ">April 14, 2025</span>
                       </div>
                     </div>
                   </div>
@@ -540,13 +540,9 @@
               </div>
             </div>
           </div>
-          <div class="py-6 px-6 text-center">
-            <p class="mb-0 fs-4">Design and Developed by <a href="#"
-                class="pe-1 text-primary text-decoration-underline">Wrappixel.com</a> Distributed by <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
-          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  </div>
 @endsection

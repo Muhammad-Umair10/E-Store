@@ -18648,6 +18648,7 @@ body {
   padding: 24px;
   transition: 0.2s ease-in;
   padding-top: 180px;
+  background-color: #e5e5e5;
 }
 
 @media (max-width: 991.98px) {
@@ -18714,6 +18715,7 @@ body {
 
   #main-wrapper[data-layout=vertical][data-sidebartype=full] .body-wrapper {
     margin-left: 270px;
+    background-color: #e5e5e5 !important;
   }
 }
 
